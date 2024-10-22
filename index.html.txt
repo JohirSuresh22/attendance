@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Attendance</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Meeting Attendance</h1>
+
+    <!-- Input for the meeting title -->
+    <input type="text" id="meeting-title" placeholder="Enter meeting title here..." />
+
+    <!-- Section for attendee list -->
+    <div id="attendee-section"></div>
+
+    <!-- Button to add a new attendee -->
+    <button onclick="addAttendee()">Add Attendee</button>
+
+    <!-- Button to download the attendance list as a PDF -->
+    <button onclick="downloadAttendance()">Download Attendance</button>
+
+</body>
+</html>
