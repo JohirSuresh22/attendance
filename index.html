@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meeting Attendance</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="app.js" defer></script>
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Meeting Attendance</h1>
+    <h1>Attendance Tracker</h1>
 
-    <!-- Input for the meeting title -->
-    <input type="text" id="meeting-title" placeholder="Enter meeting title here..." />
+    <form id="attendance-form">
+        <input type="text" id="title" placeholder="Event Title" required>
+        <div id="attendees">
+            <div class="attendee">
+                <input type="text" class="name" placeholder="Enter Name" required>
+                <input type="text" class="cuid" placeholder="Enter CUID" required>
+                <input type="checkbox" class="attendance-checkbox">
+            </div>
+        </div>
+        <button type="button" id="add-person">Add Person</button>
+        <button type="button" id="generate-pdf">Generate PDF</button>
+    </form>
 
-    <!-- Section for attendee list -->
-    <div id="attendee-section"></div>
-
-    <!-- Button to add a new attendee -->
-    <button onclick="addAttendee()">Add Attendee</button>
-
-    <!-- Button to download the attendance list as a PDF -->
-    <button onclick="downloadAttendance()">Download Attendance</button>
-
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 </html>
