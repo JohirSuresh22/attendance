@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#attendees {
+    margin-top: 10px;
+}
+
+.attendee {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.attendee input {
+    margin-right: 10px;
+    padding: 5px;
+}
